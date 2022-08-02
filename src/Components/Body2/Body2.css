@@ -1,0 +1,93 @@
+.Body2 {
+    flex: 1;
+    border-right: 1px solid #ddf;
+
+}
+
+.Body2-header h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+}
+
+.Body2-header {
+    padding: 0px 20px;
+}
+
+.padds {
+    padding: 10px 30px;
+
+}
+
+.Body2-Upper,
+.Body2-Lower {
+    padding: 10px 30px;
+
+}
+
+.Body2-Upper2 {
+
+    padding: 0px 30px;
+
+}
+
+.h2-title {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.h1-price-2 {
+    font-size: 23px;
+    font-weight: 500;
+
+}
+
+
+.h1-price {
+    font-size: 19px;
+    font-weight: 500;
+    color: #555;
+}
+
+.h1-price-3 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.Body2-Lower-Wrapper {
+    padding-top: 20px;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+
+.Body2-Lower-Wrapper-box {
+    width: 80px;
+    height: 90px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.Body2-Lower-Wrapper-box p {
+    padding-top: 10px;
+    font-size: 12px;
+    color: #444;
+
+}
+
+.random-p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+}
+
+@media (max-width:500px) {
+    .Body2-header{
+        border-top: 1px solid #ddf;
+    }
+}

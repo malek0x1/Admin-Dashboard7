@@ -1,0 +1,5 @@
+header the problem from search # hide it
+graph at body2 make it small # 
+laptop -> 350
+tab 300
+phone 280

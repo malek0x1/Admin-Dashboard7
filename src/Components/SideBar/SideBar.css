@@ -1,0 +1,78 @@
+.SideBar {
+    max-width: 80px !important;
+    min-width: 80px !important;
+    /* width: 100%; */
+    border-right: 1px solid #ddf;
+    height: 100vh;
+    padding: 20px 0px;
+    padding-top: 0px;
+}
+
+.SideBar-Header {
+    border-bottom: 1px solid #ddf;
+    width: 100%;
+
+}
+
+.SideBar-Header img {
+    width: 38px;
+    border-radius: 50%;
+}
+
+.SideBar-Footer img {
+    width: 25px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.icon-sidebar {
+    width: 100%;
+    font-size: 26px !important;
+    font-weight: 100 !important;
+    cursor: pointer;
+    color: #A9B8CD;
+}
+
+.active {
+    border-bottom: 2px solid blue;
+    /* padding-bottom: 5px; */
+}
+
+@media (max-width:500px) {
+
+
+    .SideBar,
+    .SideBar-Body {
+        flex-direction: row;
+        gap: 0;
+    }
+
+
+
+    .SideBar-Body {
+        padding-top: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 12px;
+    }
+    .SideBar {
+        max-width: 92vw !important;
+        min-width: 92vw !important;    
+        /* background-color: red; */
+        border: 0px solid black;
+        height: auto;
+        padding: 20px 0px;
+        padding-top: 0px;
+    }
+
+
+
+
+
+    .SideBar-Footer,
+    .SideBar-Header {
+        display: none;
+    }
+}

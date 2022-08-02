@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Grid, makeStyles } from '@mui/material';
+import { Container } from '@mui/system';
+import { useEffect } from 'react';
+import './App.css'
+import Body2 from './Components/Body2/Body2';
+import Body3 from './Components/Body3/Body3';
+import Body4 from './Components/Body4/Body4';
+import SideBar from './Components/SideBar/SideBar';
+// const useStyles = makeStyles((theme) => ({
+//   right: {
+//     display: "block",
+//     [theme.breakpoints.down("sm")]: { display: "none" }
+//   },
+// }));
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <SideBar/>
+      <Body2/>
+      <Body3/>
+      <Body4/>
+     
     </div>
   );
 }

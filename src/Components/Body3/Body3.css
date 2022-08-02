@@ -1,0 +1,71 @@
+.Body3 {
+    flex: 1;
+    background-color: #FAF9FF;
+    border-right: 1px solid #ddf;
+
+}
+/* BORDERS #F2F2F2 */
+.Body3-header h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+}
+
+.Body3-header {
+    padding: 0px 20px;
+}
+
+.Body3-body-upper {
+    /* padding: 0px 0px; */
+}
+
+.Body3-card {
+    width: 291px;
+    height: 127px;
+    border: 1px solid #F2F2F2;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.Body3-card-header {
+    padding: 15px;
+}
+.Body3-card-footer {
+    padding: 5px 15px;
+}
+
+.Body3-card-header-logo {
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    background-color: #EAF8F9;
+}
+.p-name{
+    font-size: 15px;
+    font-weight: 400;
+}
+.p-card-last{
+    font-size: 12px;
+    font-weight: 600;
+}
+.Body3-cards-wrapper{
+    padding-top: 10px;
+    
+}
+.btn{
+    border: 1px solid #111;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-weight: 4  00;
+    cursor: pointer;
+}
+
+
+.Body3-card-footer  .date{
+    font-weight: 500;
+    color: #666;
+}
