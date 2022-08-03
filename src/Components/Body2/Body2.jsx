@@ -1,5 +1,4 @@
-import { ArrowDownwardOutlined, ArrowUpwardOutlined } from '@mui/icons-material'
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import data from './data';
 import IMG1 from './imgs/Icon-1.png'
 import IMG2 from './imgs/Icon-2.png'
 import IMG3 from './imgs/Icon-3.png'
@@ -13,143 +12,17 @@ import IMG10 from './imgs/Icon-10.png'
 import IMG11 from './imgs/Icon-11.png'
 import React from 'react'
 import './Body2.css'
-
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import SquareCard from '../SquareCard/SquareCard';
+import LineChart2 from '../LineChart2/LineChart2';
 
 const Body2 = () => {
   const theme = useTheme();
   const phone = useMediaQuery(theme.breakpoints.down("sm"))
   const tab = useMediaQuery(theme.breakpoints.down("md"))
 
-  const data = [
-    {
-      name: 'A',
-      uv: 300,
-      pv: 200,
-      amt: 2400,
-    },
-    {
-      name: 'B',
-      uv: 200,
-      pv: 300,
-      amt: 2210,
-    },
-    {
-      name: 'C',
-      uv: 200,
-      pv: 300,
-      amt: 2290,
-    },
-    {
-      name: 'D',
-      uv: 100,
-      pv: 200,
-      amt: 2000,
-    },
-    {
-      name: 'E',
-      uv: 400,
-      pv: 600,
-      amt: 2181,
-    },
-    {
-      name: 'F',
-      uv: 200,
-      pv: 400,
-      amt: 2500,
-    },
-    {
-      name: 'G',
-      uv: 100,
-      pv: 0,
-      amt: 2100,
-    },
-    {
-      name: 'A',
-      uv: 300,
-      pv: 200,
-      amt: 2400,
-    },
-    {
-      name: 'B',
-      uv: 200,
-      pv: 300,
-      amt: 2210,
-    },
-    {
-      name: 'C',
-      uv: 200,
-      pv: 300,
-      amt: 2290,
-    },
-    {
-      name: 'D',
-      uv: 100,
-      pv: 200,
-      amt: 2000,
-    },
-    {
-      name: 'E',
-      uv: 400,
-      pv: 600,
-      amt: 2181,
-    },
-    {
-      name: 'F',
-      uv: 200,
-      pv: 400,
-      amt: 2500,
-    },
-    {
-      name: 'G',
-      uv: 100,
-      pv: 0,
-      amt: 2100,
-    },
-    {
-      name: 'A',
-      uv: 300,
-      pv: 200,
-      amt: 2400,
-    },
-    {
-      name: 'B',
-      uv: 200,
-      pv: 300,
-      amt: 2210,
-    },
-    {
-      name: 'C',
-      uv: 200,
-      pv: 300,
-      amt: 2290,
-    },
-    {
-      name: 'D',
-      uv: 100,
-      pv: 200,
-      amt: 2000,
-    },
-    {
-      name: 'E',
-      uv: 400,
-      pv: 600,
-      amt: 2181,
-    },
-    {
-      name: 'F',
-      uv: 200,
-      pv: 400,
-      amt: 2500,
-    },
-    {
-      name: 'G',
-      uv: 100,
-      pv: 0,
-      amt: 2100,
-    },
-  ];
+
 
   return (
     <div className='Body2'>
@@ -162,86 +35,30 @@ const Body2 = () => {
           <div className="df fc">
             <p className="gray-p">Current Price</p>
             <h1 className='h1-price'>$93,12.32</h1>
-            <p className="gray-p">            <span style={{ color: "crimson" }}>-1.47%</span> this week</p>
+            <p className="gray-p">
+              <span style={{ color: "crimson" }}>-1.47%</span> this week</p>
           </div>
         </div>
-        <LineChart
-          // width={350}
-          width={phone ? 250 : tab ? 450 : 350}
-          height={280}
-          data={data}
-          margin={{
-            top: 20,
-            bottom: 5,
-          }}
-        >
-          {/* <CartesianGrid strokeDasharray="3 3" /> */}
-          <XAxis dataKey="name" />
-          {/* <YAxis /> */}
-          <Tooltip />
-          {/* <Legend /> */}
-          <Line type="monotone" dataKey="pv" stroke="#F88757" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="uv" stroke="#259DA8" />
-        </LineChart>
+        <LineChart2 data={data} phone={phone} tab={tab} />
 
       </div>
       <div className="Body2-Lower">
         <h2 className="h2-title">Quick Actions</h2>
         <div className="Body2-Lower-Wrapper">
-          <div className="Body2-Lower-Wrapper-box df center fc">
-            <img src={IMG1} alt="" />
-            <p>Recieve</p>
-          </div>
-          <div className="Body2-Lower-Wrapper-box df center fc">
-            <img src={IMG2} alt="" />
-            <p>Top Up</p>
-          </div>
-          <div className="Body2-Lower-Wrapper-box df center fc">
-            <img src={IMG3} alt="" />
-            <p>Find ATM</p>
-          </div>
-          <div className="Body2-Lower-Wrapper-box df center fc">
-            <img src={IMG4} alt="" />
-            <p>Bank AC</p>
-          </div>
-          <div className="Body2-Lower-Wrapper-box df center fc">
-            <img src={IMG7} alt="" />
-            <p>Stats</p>
-          </div>
-          <div className="Body2-Lower-Wrapper-box df center fc">
-            <img src={IMG6} alt="" />
-            <p>Transfer</p>
-          </div>
-          <div className="Body2-Lower-Wrapper-box df center fc">
-            <img src={IMG5} alt="" />
-            <p>Cards</p>
-          </div>
-          <div className="Body2-Lower-Wrapper-box df center fc">
-            <img src={IMG8} alt="" />
-            <p>Pay Bill</p>
-          </div>
-          <div className="Body2-Lower-Wrapper-box df center fc">
-            <img src={IMG9} alt="" />
-            <p>Payment</p>
-          </div>
-          <div className="Body2-Lower-Wrapper-box df center fc">
-            <img src={IMG10} alt="" />
-            <p>Transactions</p>
-          </div>
-          <div className="Body2-Lower-Wrapper-box df center fc">
-            <img src={IMG11} alt="" />
-            <p>Withdraw</p>
-          </div>
-          <div className="Body2-Lower-Wrapper-box df center fc">
-            <img src={IMG1} alt="" />
-            <p>Voucher</p>
-          </div>
+          <SquareCard IMG={IMG1} action="Recieve" />
+          <SquareCard IMG={IMG2} action="Top Up" />
+          <SquareCard IMG={IMG3} action="Find ATM" />
+          <SquareCard IMG={IMG4} action="Bank AC" />
+          <SquareCard IMG={IMG5} action="Stats" />
+          <SquareCard IMG={IMG6} action="Transfer" />
+          <SquareCard IMG={IMG7} action="Cards" />
+          <SquareCard IMG={IMG8} action="Pay Bill" />
+          <SquareCard IMG={IMG9} action="Payment" />
+          <SquareCard IMG={IMG10} action="Transactions" />
+          <SquareCard IMG={IMG11} action="Withdraw" />
+          <SquareCard IMG={IMG1} action="Voucher" />
         </div>
-
       </div>
-
-
-
     </div>
   )
 }

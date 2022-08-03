@@ -4,6 +4,7 @@
     border-right: 1px solid #ddf;
 
 }
+
 /* BORDERS #F2F2F2 */
 .Body3-header h3 {
     font-size: 18px;
@@ -30,6 +31,7 @@
 .Body3-card-header {
     padding: 15px;
 }
+
 .Body3-card-footer {
     padding: 5px 15px;
 }
@@ -40,19 +42,23 @@
     height: 33px;
     background-color: #EAF8F9;
 }
-.p-name{
+
+.p-name {
     font-size: 15px;
     font-weight: 400;
 }
-.p-card-last{
+
+.p-card-last {
     font-size: 12px;
     font-weight: 600;
 }
-.Body3-cards-wrapper{
+
+.Body3-cards-wrapper {
     padding-top: 10px;
-    
+
 }
-.btn{
+
+.btn {
     border: 1px solid #111;
     width: 60px;
     height: 30px;
@@ -60,12 +66,19 @@
     background-color: black;
     color: white;
     font-size: 12px;
-    font-weight: 4  00;
+    font-weight: 4 00;
     cursor: pointer;
 }
 
 
-.Body3-card-footer  .date{
+.Body3-card-footer .date {
     font-weight: 500;
     color: #666;
+}
+
+
+
+.btn-unique {
+    background-color: #FFF;
+    color: #111
 }

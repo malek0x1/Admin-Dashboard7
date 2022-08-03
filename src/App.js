@@ -1,6 +1,4 @@
-import { Grid, makeStyles } from '@mui/material';
-import { Container } from '@mui/system';
-import { useEffect } from 'react';
+
 import './App.css'
 import Body2 from './Components/Body2/Body2';
 import Body3 from './Components/Body3/Body3';
