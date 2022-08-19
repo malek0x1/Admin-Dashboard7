@@ -32,12 +32,15 @@ const Body2 = () => {
       <div className="Body2-Upper">
         <div className="df">
           <h2 className="h2-title">Bitcoin</h2>
-          <div className="df fc">
-            <p className="gray-p">Current Price</p>
-            <h1 className='h1-price'>$93,12.32</h1>
-            <p className="gray-p">
-              <span style={{ color: "crimson" }}>-1.47%</span> this week</p>
-          </div>
+
+            <div className="df fc">
+              <p className="gray-p">Current Price</p>
+              <h1 className='h1-price'>$93,12.32</h1>
+              <p className="gray-p">
+                <span style={{ color: "crimson" }}>-1.47%</span> this week</p>
+            </div>
+
+
         </div>
         <LineChart2 data={data} phone={phone} tab={tab} />
 

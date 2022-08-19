@@ -5,7 +5,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 const LineChart2 = (props) => {
     return (
         <LineChart
-            width={props.phone ? 250 : props.tab ? 450 : 350}
+            width={props.phone ? 300 : props.tab ? 450 : 350}
             height={280}
             data={props.data}
             margin={{ top: 20, bottom: 5, }}>
